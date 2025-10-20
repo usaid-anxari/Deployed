@@ -18,8 +18,7 @@ const PORT = process.env.PORT || 5000;
 // Get CORS origins from the environment variable or default to a safe set
 export const CORS_ORIGINS = process.env.CORS_ORIGINS
   ? process.env.CORS_ORIGINS.split(",")  // Allow multiple origins
-  : ["https://www.accompliq.com", "https://accompliq.com", process.env.CLIENT_URL];  // Default for local and production domains
-
+  : ["https://www.accompliq.com", "https://accompliq.com","https://deployed-seven.vercel.app", process.env.CLIENT_URL] || "http://localhost:3000";  // Default for local and production domains
 // Middleware
 app.use(morgan("dev"));
 app.use(helmet());
