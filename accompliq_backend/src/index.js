@@ -89,6 +89,9 @@ app.get("/api/health", (req, res) =>
   })
 );
 
+app.get('/', (req, res) => {
+  res.json({ message: 'Hello from Vercel!' });
+});
 // Routes
 app.use("/api", allRoutes);
 
@@ -125,3 +128,5 @@ const startServer = async () => {
 
 // Start the application
 startServer();
+
+export default app;
