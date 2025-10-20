@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HIPAA Authorization Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      [contenteditable="true"] {
+        display: inline-block;
+        min-width: 200px;
+        border-bottom: 1px solid #000;
+        min-height: 20px;
+        padding: 0 5px;
+        vertical-align: bottom;
+      }
+      .underline-large {
+        min-width: 400px;
+      }
+      .underline-medium {
+        min-width: 300px;
+      }
+      .underline-small {
+        min-width: 100px;
+      }
+      .underline-xsmall {
+        min-width: 50px;
+      }
+      textarea[contenteditable="true"] {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #000;
+        resize: none;
+        overflow: hidden;
+        min-height: 20px;
+        padding: 0 5px;
+      }
+      .page-break {
+        page-break-after: always;
+      }
+      .signature-line {
+        @apply border-b border-black w-72 mt-2;
+      }
+      .checkbox {
+        cursor: pointer;
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body
+    class="font-sans max-w-3xl mx-auto py-10 px-6 text-gray-800 leading-relaxed"
+  >
+    <h1 class="text-center text-xl font-bold mb-8">HIPAA Authorization Form</h1>
+
+    <div class="mb-4">
+      I, <span class="underline-large" contenteditable="true"></span>,
+    </div>
+    <div class="mb-4">
+      currently residing at
+      <span class="underline-large" contenteditable="true"></span>,
+    </div>
+    <div class="mb-8">
+      hereby authorize the use and disclosure of my protected health information
+      as described below.
+    </div>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      1. Patient Information:
+    </h2>
+    <ul class="list-none pl-4 mb-8 space-y-3">
+      <li>
+        • Full Name:
+        <span class="underline-large" contenteditable="true"></span>
+      </li>
+      <li>
+        • Date of Birth:
+        <span class="underline-medium" contenteditable="true"></span>
+      </li>
+      <li>
+        • Address: <span class="underline-large" contenteditable="true"></span>
+      </li>
+      <li>
+        • Phone Number:
+        <span class="underline-medium" contenteditable="true"></span>
+      </li>
+      <li>
+        • Email Address:
+        <span class="underline-large" contenteditable="true"></span>
+      </li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      2. Authorized Individual:
+    </h2>
+    <p class="mb-4">
+      I authorize the release of my protected health information to the
+      following individual:
+    </p>
+    <ul class="list-none pl-4 mb-8 space-y-3">
+      <li>
+        • Full Name:
+        <span class="underline-large" contenteditable="true"></span>
+      </li>
+      <li>
+        • Relationship to Patient:
+        <span class="underline-medium" contenteditable="true"></span>
+      </li>
+      <li>
+        • Address: <span class="underline-large" contenteditable="true"></span>
+      </li>
+      <li>
+        • Phone Number:
+        <span class="underline-medium" contenteditable="true"></span>
+      </li>
+      <li>
+        • Email Address:
+        <span class="underline-large" contenteditable="true"></span>
+      </li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      3. Information to be Disclosed:
+    </h2>
+    <p class="mb-4">
+      I authorize the disclosure of the following types of protected health
+      information:
+    </p>
+    <ul class="list-none pl-4 mb-8 space-y-3">
+      <li class="flex items-center">
+        • <span class="checkbox">☑</span> Medical Records
+      </li>
+      <li class="flex items-center">
+        • <span class="checkbox">☑</span> Treatment Plans
+      </li>
+      <li class="flex items-center">
+        • <span class="checkbox">☑</span> Test Results
+      </li>
+      <li class="flex items-center">
+        • <span class="checkbox">☑</span> Billing Information
+      </li>
+      <li>
+        • Other (Specify):
+        <span class="underline-large" contenteditable="true"></span>
+      </li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      4. Purpose of Disclosure:
+    </h2>
+    <p class="mb-4">
+      This authorization is granted for the following purpose(s):
+    </p>
+    <ul class="list-none pl-4 mb-8 space-y-3">
+      <li class="flex items-center">
+        • <span class="checkbox">☑</span> Coordination of Care
+      </li>
+      <li class="flex items-center">
+        • <span class="checkbox">☑</span> Legal Proceedings
+      </li>
+      <li class="flex items-center">
+        • <span class="checkbox">☑</span> Insurance Claims
+      </li>
+      <li>
+        • Other (Specify):
+        <span class="underline-large" contenteditable="true"></span>
+      </li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      5. Duration of Authorization:
+    </h2>
+    <p class="mb-8">
+      This authorization is effective immediately and will remain in effect
+      until <span class="underline-large" contenteditable="true"></span>, unless
+      revoked by me in writing.
+    </p>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      6. Revocation:
+    </h2>
+
+    <div class="page-break mt-10 pt-10 border-t border-gray-200"></div>
+
+    <h1 class="text-center text-xl font-bold mb-8">
+      HIPAA Authorization Form (continued)
+    </h1>
+
+    <p class="mb-8">
+      I reserve the right to revoke this authorization at any time by providing
+      a written notice to the healthcare provider.
+    </p>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      7. Confidentiality Notice:
+    </h2>
+    <p class="mb-8">
+      I understand that once the information is disclosed, it may be subject to
+      re-disclosure by the authorized individual and may no longer be protected
+      by HIPAA.
+    </p>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      8. Governing Law:
+    </h2>
+    <p class="mb-8">
+      This HIPAA Authorization is governed by the laws of the
+      <span class="underline-medium" contenteditable="true"></span> in which I
+      reside.
+    </p>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      9. Signatures:
+    </h2>
+    <p class="mb-2">I have executed this HIPAA Authorization on this</p>
+    <p class="mb-2">
+      <span class="underline-small" contenteditable="true"></span>
+    </p>
+    <p class="mb-8">
+      day of <span class="underline-small" contenteditable="true"></span>.
+    </p>
+
+    <div class="signature-line"></div>
+    <p class="mt-2">
+      [Your Signature]
+      <span class="underline-large" contenteditable="true"></span>
+    </p>
+
+    <div class="signature-line"></div>
+    <p class="mt-2">[Witness 1 Name]</p>
+
+    <div class="signature-line"></div>
+    <p class="mt-2">[Witness 1 Signature]</p>
+
+    <div class="signature-line"></div>
+    <p class="mt-2">[Witness 2 Name]</p>
+
+    <div class="signature-line"></div>
+    <p class="mt-2">[Witness 2 Signature]</p>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const editables = document.querySelectorAll('[contenteditable="true"]');
+
+        editables.forEach((el, index) => {
+          const savedContent = localStorage.getItem(`hipaa-${index}`);
+          if (savedContent) {
+            el.innerHTML = savedContent;
+          }
+        });
+
+        editables.forEach((el, index) => {
+          el.addEventListener("blur", function () {
+            localStorage.setItem(`hipaa-${index}`, this.innerHTML);
+          });
+        });
+
+        const checkboxes = document.querySelectorAll(".checkbox");
+        checkboxes.forEach((checkbox) => {
+          checkbox.addEventListener("click", function () {
+            this.textContent = this.textContent === "☐" ? "☑" : "☐";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

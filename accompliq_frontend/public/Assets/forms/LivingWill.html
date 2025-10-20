@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Living Will</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      [contenteditable="true"] {
+        display: inline-block;
+        min-width: 200px;
+        border-bottom: 1px solid #000;
+        min-height: 20px;
+        padding: 0 5px;
+        vertical-align: bottom;
+      }
+      .underline-large {
+        min-width: 400px;
+      }
+      .underline-medium {
+        min-width: 300px;
+      }
+      .underline-small {
+        min-width: 100px;
+      }
+      .underline-xsmall {
+        min-width: 50px;
+      }
+      textarea[contenteditable="true"] {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #000;
+        resize: none;
+        overflow: hidden;
+        min-height: 20px;
+        padding: 0 5px;
+      }
+      .page-break {
+        page-break-after: always;
+      }
+      .signature-line {
+        @apply border-b border-black w-72 mt-2;
+      }
+      .large-editable {
+        min-height: 100px;
+        display: block;
+        width: 100%;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body
+    class="font-sans max-w-3xl mx-auto py-10 px-6 text-gray-800 leading-relaxed"
+  >
+    <h1 class="text-center text-xl font-bold mb-8">Living Will</h1>
+
+    <div class="mb-4">
+      I, <span class="underline-large" contenteditable="true"></span>,
+    </div>
+    <div class="mb-4">
+      residing at <span class="underline-large" contenteditable="true"></span>,
+    </div>
+    <div class="mb-8">
+      being of sound mind and free will, hereby declare this document to be my
+      Last Will and Testament.
+    </div>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      Section 1: Personal Information
+    </h2>
+
+    <p class="mb-2 font-bold">1.1 Executor:</p>
+    <div class="mb-4">
+      I appoint, <span class="underline-large" contenteditable="true"></span>
+    </div>
+    <div class="mb-4">
+      residing at <span class="underline-large" contenteditable="true"></span>,
+    </div>
+    <div class="mb-4">
+      as the executor of this will. If
+      <span class="underline-large" contenteditable="true"></span> is unable or
+      unwilling to serve, I appoint
+    </div>
+    <div class="mb-4">
+      <span class="underline-large" contenteditable="true"></span>,
+    </div>
+    <div class="mb-8">
+      residing at <span class="underline-large" contenteditable="true"></span>,
+      as the alternative executor.
+    </div>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      Section 2: Distribution of Assets
+    </h2>
+
+    <p class="mb-4 font-bold">2.1 Debts and Funeral Expenses:</p>
+    <p class="mb-8">
+      I direct my executor to first pay all my debts, funeral expenses, and any
+      expenses related to the administration of my estate.
+    </p>
+
+    <p class="mb-4 font-bold">2.2 Specific Bequests:</p>
+    <p class="mb-4">
+      I give, devise, and bequeath the following specific items to the
+      individuals or organizations named below:
+    </p>
+    <ul class="list-none pl-4 mb-8 space-y-3">
+      <li>
+        • <span class="underline-large" contenteditable="true"></span> to
+        <span class="underline-large" contenteditable="true"></span>
+      </li>
+      <li>
+        • <span class="underline-large" contenteditable="true"></span> to
+        <span class="underline-large" contenteditable="true"></span>
+      </li>
+    </ul>
+
+    <div class="page-break mt-10 pt-10 border-t border-gray-200"></div>
+
+    <h1 class="text-center text-xl font-bold mb-8">Living Will (continued)</h1>
+
+    <p class="mb-4 font-bold">2.3 Residual Estate:</p>
+    <div class="mb-4">
+      I give, devise, and bequeath the rest, residue, and remainder of my estate
+      to
+    </div>
+    <div class="mb-4">
+      <span class="underline-large" contenteditable="true"></span>
+    </div>
+    <div class="mb-4">
+      If <span class="underline-large" contenteditable="true"></span>
+    </div>
+    <div class="mb-4">predeceases me, then to</div>
+    <div class="mb-8">
+      <span class="underline-large" contenteditable="true"></span>
+    </div>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      Section 3: Guardianship of Minor Children (if applicable)
+    </h2>
+
+    <p class="mb-4 font-bold">3.1 Guardianship:</p>
+    <div class="mb-4">
+      If I am survived by minor children and the other parent is unable or
+      unwilling to act as guardian, I appoint
+    </div>
+    <div class="mb-8">
+      <span class="underline-large" contenteditable="true"></span> as the legal
+      guardian of my minor children.
+    </div>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      Section 4: Miscellaneous
+    </h2>
+
+    <p class="mb-4 font-bold">4.1 Digital Assets:</p>
+    <p class="mb-8">
+      I direct my executor to access and manage my digital assets, including but
+      not limited to online accounts, social media, and email, in accordance
+      with applicable laws and terms of service.
+    </p>
+
+    <p class="mb-4 font-bold">4.2 Governing Law:</p>
+    <div class="mb-8">
+      This will shall be governed by the laws of
+      <span class="underline-large" contenteditable="true"></span>.
+    </div>
+
+    <p class="mb-4">
+      IN WITNESS WHEREOF, I have executed and signed this Last Will and
+      Testament on <span class="underline-small" contenteditable="true"></span>.
+    </p>
+
+    <div class="signature-line"></div>
+    <p class="mt-2">
+      [Your Full Legal Signature]
+      <span class="underline-large" contenteditable="true"></span>
+    </p>
+
+    <h2 class="text-xl font-semibold mt-8 mb-4 border-b border-black pb-1">
+      Section 5: Witnesses
+    </h2>
+
+    <p class="mb-8">
+      I declare that I signed and executed this document in the presence of the
+      undersigned witnesses, who witnessed and signed this will at my request,
+      in my presence, and in the presence of each other.
+    </p>
+
+    <p class="font-bold">Witness 1:</p>
+
+    <div class="page-break mt-10 pt-10 border-t border-gray-200"></div>
+
+    <h1 class="text-center text-xl font-bold mb-8">Living Will (continued)</h1>
+
+    <div class="signature-line"></div>
+    <p class="mt-2">
+      [Full Name and Signature]
+      <span class="underline-large" contenteditable="true"></span>
+    </p>
+
+    <p class="mt-8 font-bold">Witness 2:</p>
+
+    <div class="signature-line"></div>
+    <p class="mt-2">
+      [Full Name and Signature]
+      <span class="underline-large" contenteditable="true"></span>
+    </p>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const editables = document.querySelectorAll('[contenteditable="true"]');
+
+        editables.forEach((el, index) => {
+          const savedContent = localStorage.getItem(`living-will-${index}`);
+          if (savedContent) {
+            el.innerHTML = savedContent;
+          }
+        });
+
+        editables.forEach((el, index) => {
+          el.addEventListener("blur", function () {
+            localStorage.setItem(`living-will-${index}`, this.innerHTML);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

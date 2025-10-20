@@ -1,0 +1,41 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "11223344",
+    "database": "accompliq",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "postgres",
+    "logging": true,
+    "dialectOptions": {
+      "ssl": false
+    },
+    "pool": {
+      "max": 10,
+      "min": 2,
+      "acquire": 30000,
+      "idle": 10000
+    }
+  },
+  "production": {
+    "username": "postgres",
+    "password": "11223344",
+    "database": "accompliq",
+    "host": "34.205.157.184",
+    "port": 5432,
+    "dialect": "postgres",
+    "logging": false,
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    },
+    "pool": {
+      "max": 20,
+      "min": 5,
+      "acquire": 60000,
+      "idle": 20000
+    }
+  }
+}

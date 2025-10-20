@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Poppins";
+}
+
+.clip-bottom {
+  clip-path: polygon(0 90%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+.slanted-bottom {
+  transform: skewY(2deg);
+  height: 120px;
+  transform-origin: bottom left;
+}
+
+.PhoneInputCountry,
+.PhoneInputCountrySelect,
+.PhoneInputCountryIcon--border,
+.PhoneInputCountryIcon,
+.PhoneInputCountryIcon--border {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Optionally, adjust margin if needed */
+.PhoneInputCountryIcon {
+  margin-left: 0 !important;
+  margin-right: 8px !important; /* Adjust spacing if flag is too close */
+}
+
+/* Add this to your CSS */
+.PhoneInputCountry {
+  margin-left: 8px !important; /* Add left margin to the flag container */
+  margin-right: 8px !important;
+}
+
+.PhoneInputCountryIconImg {
+  margin-right: 8px !important; /* Add right margin to the flag itself */
+}
+
+.PhoneInputInput {
+  padding-left: 10px !important; /* Adjust input padding if needed */
+}
+
+ .content-section {
+            text-align: center;
+            padding: 0 60px; /* More padding on the sides */
+            padding-bottom: 40px; /* Space from bottom of container */
+          }
+
+          .content-heading {
+            font-size: 2.4em; /* Larger content heading */
+            color: #34495e; /* Darker blue-grey */
+            margin-bottom: 30px; /* More space below heading */
+            line-height: 1.3;
+          }
+
+          .content-paragraph {
+            font-size: 1.15em; /* Slightly larger paragraph text */
+            color: #555; /* Softer text color */
+            line-height: 1.9; /* Increased line height for readability */
+            margin-bottom: 25px; /* More space between paragraphs */
+            max-width: 850px; /* Limit paragraph width for readability */
+            margin-left: auto;
+            margin-right: auto;
+          }

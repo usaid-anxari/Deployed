@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Living Will and Advance Healthcare Directive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      [contenteditable="true"] {
+        display: inline-block;
+        min-width: 200px;
+        border-bottom: 1px solid #000;
+        min-height: 20px;
+        padding: 0 5px;
+        vertical-align: bottom;
+      }
+      .underline-large {
+        min-width: 400px;
+      }
+      .underline-medium {
+        min-width: 300px;
+      }
+      .underline-small {
+        min-width: 100px;
+      }
+      .underline-xsmall {
+        min-width: 50px;
+      }
+      textarea[contenteditable="true"] {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #000;
+        resize: none;
+        overflow: hidden;
+        min-height: 20px;
+        padding: 0 5px;
+      }
+      .page-break {
+        page-break-after: always;
+      }
+      .signature-line {
+        @apply border-b border-black w-72 mt-2;
+      }
+      .large-editable {
+        min-height: 100px;
+        display: block;
+        width: 100%;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      .checkbox {
+        cursor: pointer;
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body
+    class="font-sans max-w-3xl mx-auto py-10 px-6 text-gray-800 leading-relaxed"
+  >
+    <h1 class="text-center text-xl font-bold mb-8">
+      Living Will and Advance Healthcare Directive
+    </h1>
+
+    <div class="mb-4">
+      I, <span class="underline-large" contenteditable="true"></span>,
+    </div>
+    <div class="mb-8">
+      residing at <span class="underline-large" contenteditable="true"></span>,
+      being of sound mind and under no duress, hereby declare this document to
+      be my Living Will and Advance Healthcare Directive.
+    </div>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      Section 1: Healthcare Agent Appointment
+    </h2>
+    <p class="mb-8">
+      I appoint
+      <span class="underline-large" contenteditable="true"></span> (hereinafter
+      referred to as my "Agent") to make healthcare decisions on my behalf if I
+      am unable to communicate or make decisions regarding my medical treatment.
+    </p>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      Section 2: Healthcare Instructions
+    </h2>
+    <p class="mb-4">
+      In the event that I am diagnosed with a terminal condition, are in a
+      persistent vegetative state, or if my attending physician determines that
+      my condition is irreversible, I provide the following instructions:
+    </p>
+
+    <p class="mb-2 font-bold">a. Life-Sustaining Treatment:</p>
+    <ul class="list-none pl-4 mb-6 space-y-3">
+      <li class="flex items-center">
+        • <span class="checkbox">☑</span> I request that all life-sustaining
+        treatments be administered, including, but not limited to, artificial
+        respiration, artificial nutrition, and hydration.
+      </li>
+      <li class="flex items-center">
+        • <span class="checkbox">☑</span> I do not want life-sustaining
+        treatments administered if they merely prolong the process of dying and
+        are not expected to improve my condition.
+      </li>
+    </ul>
+
+    <p class="mb-2 font-bold">b. Pain Management:</p>
+    <ul class="list-none pl-4 mb-6 space-y-3">
+      <li class="flex items-center">
+        • <span class="checkbox">☑</span> I request that my healthcare providers
+        make every effort to keep me free from pain and discomfort, even if it
+        may hasten my death.
+      </li>
+      <li class="flex items-center">
+        • <span class="checkbox">☑</span> I prioritize my comfort and quality of
+        life over the extension of my life through aggressive pain management.
+      </li>
+    </ul>
+
+    <p class="mb-2 font-bold">c. Organ and Tissue Donation:</p>
+    <ul class="list-none pl-4 mb-8 space-y-3">
+      <li class="flex items-center">
+        • <span class="checkbox">☑</span> I wish to donate any needed organs and
+        tissues for transplantation, research, or educational purposes.
+      </li>
+      <li class="flex items-center">
+        • <span class="checkbox">☑</span> I do not wish to donate any organs or
+        tissues.
+      </li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      Section 3: Additional Instructions
+    </h2>
+    <p class="mb-2">
+      [Include any additional specific instructions or preferences regarding
+      your healthcare that you want to communicate to your healthcare
+      providers.]
+    </p>
+    <div class="large-editable" contenteditable="true"></div>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      Section 4: Duration
+    </h2>
+    <p class="mb-8">
+      This Living Will and Advance Healthcare Directive shall remain in effect
+      unless revoked by me in writing or by my oral expression to my attending
+      physician.
+    </p>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      Section 5: Successor Healthcare Agent
+    </h2>
+    <p class="mb-8">
+      In the event that my appointed Healthcare Agent is unable or unwilling to
+      serve, I appoint
+      <span class="underline-large" contenteditable="true"></span> as my
+      successor to make healthcare decisions on my behalf.
+    </p>
+
+    <div class="page-break mt-10 pt-10 border-t border-gray-200"></div>
+
+    <h1 class="text-center text-xl font-bold mb-8">
+      Living Will and Advance Healthcare Directive (continued)
+    </h1>
+
+    <h2 class="text-xl font-semibold mb-4 border-b border-black pb-1">
+      Section 6: Signatures
+    </h2>
+    <p class="mb-2">
+      I have executed this Living Will and Advance Healthcare Directive on this
+    </p>
+    <p class="mb-2">
+      <span class="underline-small" contenteditable="true"></span>
+    </p>
+    <p class="mb-8">
+      day of <span class="underline-small" contenteditable="true"></span>.
+    </p>
+
+    <div class="signature-line"></div>
+    <p class="mt-2">
+      [Your Signature]
+      <span class="underline-large" contenteditable="true"></span>
+    </p>
+
+    <div class="signature-line"></div>
+    <p class="mt-2">[Witness 1 Name]</p>
+
+    <div class="signature-line"></div>
+    <p class="mt-2">[Witness 1 Signature]</p>
+
+    <div class="signature-line"></div>
+    <p class="mt-2">[Witness 2 Name]</p>
+
+    <div class="signature-line"></div>
+    <p class="mt-2">[Witness 2 Signature]</p>
+
+    <p class="mt-8 text-sm italic">
+      Please note that the witnesses should not be individuals who stand to
+      inherit or have a financial interest in your estate. Additionally, it's
+      important to comply with any legal requirements in your jurisdiction
+      regarding the notarization or witnessing of advance healthcare directives.
+      This template is a starting point and may need to be customized based on
+      your specific circumstances and local laws.
+    </p>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const editables = document.querySelectorAll('[contenteditable="true"]');
+
+        editables.forEach((el, index) => {
+          const savedContent = localStorage.getItem(`living-will-${index}`);
+          if (savedContent) {
+            el.innerHTML = savedContent;
+          }
+        });
+
+        editables.forEach((el, index) => {
+          el.addEventListener("blur", function () {
+            localStorage.setItem(`living-will-${index}`, this.innerHTML);
+          });
+        });
+
+        const checkboxes = document.querySelectorAll(".checkbox");
+        checkboxes.forEach((checkbox) => {
+          checkbox.addEventListener("click", function () {
+            this.textContent = this.textContent === "☐" ? "☑" : "☐";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
