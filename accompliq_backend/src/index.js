@@ -105,8 +105,8 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Start server and sync database (if applicable)
-const startServer = async () => {
+// Initialize database for Vercel
+const initializeDatabase = async () => {
   try {
     // Ensure database sync happens only in non-production or explicitly enabled
     if (
@@ -115,18 +115,19 @@ const startServer = async () => {
     ) {
       await syncDatabase();  // Sync database, if needed
     }
-
-    // Start the HTTP server
-    http.createServer(app).listen(PORT, () => {
-      console.log(`Server running on port ${PORT}`);
-    });
   } catch (error) {
-    console.error("Failed to start:", error);
-    process.exit(1);  // Exit the process if startup fails
+    console.error("Database initialization failed:", error);
   }
 };
 
-// Start the application
-startServer();
+// Initialize database
+initializeDatabase();
+
+// For local development only
+if (process.env.NODE_ENV !== "production") {
+  http.createServer(app).listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
 
 export default app;
