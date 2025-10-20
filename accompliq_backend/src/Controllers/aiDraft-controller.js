@@ -1,6 +1,5 @@
 import { Op } from "sequelize";
 import AIDraft from "../Modals/aiDraft-model.js";
-import generateAIDraft from "../utils/aiService.js";
 import { generateAIDraftPDF } from "../utils/pdfGenerator.js";
 import Accompliq from "../Modals/accompliq-model.js";
 
@@ -32,7 +31,8 @@ const aiDraftController = {
         });
       }
 
-      // Get the generation result
+      // Get the generation result using dynamic import
+      const { default: generateAIDraft } = await import("../utils/aiService.js");
       const { generatedText, prompt } = await generateAIDraft(accompliq);
 
       // Extract the accompliq details you want to store
