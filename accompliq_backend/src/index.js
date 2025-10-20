@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import helmet from "helmet";
 import rateLimit from "express-rate-limit";
-import { sequelize } from "./db/config.js";
+// Database will be connected on first request, not at startup
 import allRoutes from "./Routes/all-routes.js";
 import { syncDatabase } from "./db/sync.js";
 import http from "http";
@@ -105,23 +105,12 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Initialize database for Vercel
-const initializeDatabase = async () => {
-  try {
-    // Ensure database sync happens only in non-production or explicitly enabled
-    if (
-      process.env.NODE_ENV !== "production" ||
-      process.env.SYNC_DB_ON_STARTUP === "true"
-    ) {
-      await syncDatabase();  // Sync database, if needed
-    }
-  } catch (error) {
+// Initialize database for Vercel (only if explicitly enabled)
+if (process.env.SYNC_DB_ON_STARTUP === "true") {
+  syncDatabase().catch(error => {
     console.error("Database initialization failed:", error);
-  }
-};
-
-// Initialize database
-initializeDatabase();
+  });
+}
 
 // For local development only
 if (process.env.NODE_ENV !== "production") {
